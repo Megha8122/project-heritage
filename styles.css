@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  height: 258vh;
+  width: 98.7vw;
+  background-color: rgb(244, 237, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainBox {
+  height: 250vh;
+  width: 95vw;
+  background-color: white;
+  border-radius: 10px;
+}
+.homePage {
+  height: 90vh;
+  /* background-color: aqua; */
+  width: 95vw;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  margin-top: 15px;
+  height: 5vh;
+  width: 98.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navUl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLi {
+  list-style: none;
+  margin: 15px;
+  /* color: black; */
+}
+.navLi a {
+  text-decoration: none;
+  color: black;
+}
+.navLi a:hover {
+  text-decoration: underline;
+}
+.homeDiv {
+  height: 85vh;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.vectorBox {
+  height: 75vh;
+  margin: 20px;
+  border-radius: 10px;
+  width: 90vw;
+  background: url(./julian-yu-_WuPjE-MPHo-unsplash.jpg) no-repeat center
+    center/cover;
+  margin-bottom: 20px;
+  /* background-color: black; */
+}
+.titleBox {
+  height: 75vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  flex-direction: column;
+}
+.heading {
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-shadow: 5px 5px 15px black;
+  margin: 25px;
+}
+.img1 {
+  height: 45vh;
+  width: 45vw;
+}
+
+.viewBtn {
+  height: 30px;
+  width: 125px;
+  border: none;
+  /* outline: 2px solid black; */
+  background-color: rgb(255 48 48);
+  border-radius: 10px;
+}
+.viewBtn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.social {
+  height: 25px;
+  /* background-color: rgb(165, 8, 8); */
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.icons {
+  margin: 15px;
+  font-size: 1.4rem;
+}
+.galleryPage {
+    max-height: 180vh;
+  height: 120vh;
+  /* background-color: aqua; */
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards {
+  height: 50vh;
+  min-width: 20vw;
+  width: 25vw;
+  border-radius: 10px;
+  /* background-color: black; */
+  margin: 10px;
+  position: relative;
+}
+.hoverDiv {
+  height: 50vh;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 25vw;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.516);
+  margin: 10px;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.para {
+  color: white;
+  font-size: 2rem;
+}
+.hoverDiv:hover {
+  opacity: 1;
+}
+#card1 {
+  background: url(./card1.jpg) no-repeat center center/cover;
+}
+#card2 {
+  background: url(./card2.jpg) no-repeat center center/cover;
+}
+#card3 {
+  background: url(./card3.jpg) no-repeat center center/cover;
+}
+#card4 {
+  background: url(./card4.jpg) no-repeat center center/cover;
+}
+#card5 {
+  background: url(./card5.jpg) no-repeat center center/cover;
+}
+#card6 {
+  background: url(./card6.jpg) no-repeat center center/cover;
+}
+.contactPage {
+  height: 30vh;
+  margin: auto;
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.881);
+}
+.span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactHeading{
+    color: rgb(255 48 48);
+}
+.mail{
+    color: white;
+}
+.span p{
+    margin-left: 5px;
+    color: white;
+}
+footer{
+    height: 5vh;
+    width: 95vw;
+    background-color: black;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 499px){
+    .galleryPage{
+        height: 60vh;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .cards{
+        height: 15vh;
+        width: 39vw;
+    }
+    .hoverDiv{
+        height: 15vh;
+        width: 39vw;
+    }
+    .hoverDiv p{
+        font-size: 1.1rem;
+    }
+    .mainBox{
+        height: 180vh;
+    }
+    .container{
+        height: 184vh;
+    }
+}
